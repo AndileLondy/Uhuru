@@ -10,6 +10,10 @@
         darkMode: 'class',
         theme: {
           extend: {
+            colors: {
+              primary: '#1E3A8A', // Deep blue
+              accent: '#E0F2FE', // Light blue background
+            },
             animation: {
               fadeIn: "fadeIn 1.5s ease-in-out",
               slideUp: "slideUp 1s ease-in-out",
@@ -40,14 +44,14 @@
       }
     </script>
   </head>
-  <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
-    <header class="bg-blue-800 dark:bg-blue-900 text-white py-6 animate-fadeIn">
+  <body class="bg-accent text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
+    <header class="bg-primary dark:bg-blue-900 text-white py-6 animate-fadeIn shadow-md">
       <div class="container mx-auto px-4 flex flex-col items-center">
         <div class="flex items-center space-x-4">
-        <img src="https://via.placeholder.com/60" alt="Uhuru-Lifestyle Logo" class="rounded-full w-14 h-14">
-        <h1 class="text-3xl font-bold">Uhuru-Lifestyle</h1>
-    </div>
-        <nav class="space-x-4">
+          <img src="https://via.placeholder.com/60" alt="Uhuru-Lifestyle Logo" class="rounded-full w-14 h-14">
+          <h1 class="text-3xl font-bold tracking-wide">Uhuru-Lifestyle</h1>
+        </div>
+        <nav class="mt-4 space-x-4">
           <a href="menu.html" class="hover:underline text-yellow-300">Menu</a>
           <a href="https://wa.me/27672671157" target="_blank" class="hover:underline">WhatsApp</a>
           <a href="https://facebook.com/yourpage" target="_blank" class="hover:underline">Facebook</a>
@@ -67,8 +71,8 @@
 
       <h3 class="text-2xl font-semibold mb-4 text-red-600">Shisanyama</h3>
       <div class="space-y-6">
-        <div class="flex items-center border p-4 rounded-lg bg-white dark:bg-gray-800 transition-transform duration-500 hover:scale-105 animate-bounceIn">
-          <img src="https://via.placeholder.com/150" alt="Braai Plate" class="w-32 h-32 rounded-md object-cover mr-6" />
+        <div class="flex items-center border border-primary p-4 rounded-lg bg-white dark:bg-gray-800 hover:scale-105 transition-transform animate-bounceIn">
+          <img src="nyama.jpg" alt="Braai Plate" class="w-32 h-32 rounded-md object-cover mr-6" />
           <div>
             <h4 class="text-xl font-bold">Braai Plate</h4>
             <p class="text-gray-600 dark:text-gray-300">Beef, wors, and pap</p>
@@ -79,8 +83,8 @@
 
       <h3 class="text-2xl font-semibold mt-10 mb-4 text-blue-600">Carwash</h3>
       <div class="space-y-6">
-        <div class="flex items-center border p-4 rounded-lg bg-white dark:bg-gray-800 transition-transform duration-500 hover:scale-105 animate-bounceIn">
-          <img src="https://via.placeholder.com/150" alt="Full Car Wash" class="w-32 h-32 rounded-md object-cover mr-6" />
+        <div class="flex items-center border border-primary p-4 rounded-lg bg-white dark:bg-gray-800 hover:scale-105 transition-transform animate-bounceIn">
+          <img src="car.jpg" alt="Full Car Wash" class="w-32 h-32 rounded-md object-cover mr-6" />
           <div>
             <h4 class="text-xl font-bold">Full Car Wash</h4>
             <p class="text-gray-600 dark:text-gray-300">Interior & exterior cleaning</p>
@@ -91,7 +95,7 @@
 
       <h3 class="text-2xl font-semibold mt-10 mb-4 text-pink-600">Salon</h3>
       <div class="space-y-6">
-        <div class="flex items-center border p-4 rounded-lg bg-white dark:bg-gray-800 transition-transform duration-500 hover:scale-105 animate-bounceIn">
+        <div class="flex items-center border border-primary p-4 rounded-lg bg-white dark:bg-gray-800 hover:scale-105 transition-transform animate-bounceIn">
           <img src="https://via.placeholder.com/150" alt="Haircut" class="w-32 h-32 rounded-md object-cover mr-6" />
           <div>
             <h4 class="text-xl font-bold">Haircut</h4>
@@ -99,7 +103,7 @@
             <p class="text-green-600 font-semibold">R50</p>
           </div>
         </div>
-        <div class="flex items-center border p-4 rounded-lg bg-white dark:bg-gray-800 transition-transform duration-500 hover:scale-105 animate-bounceIn">
+        <div class="flex items-center border border-primary p-4 rounded-lg bg-white dark:bg-gray-800 hover:scale-105 transition-transform animate-bounceIn">
           <img src="https://via.placeholder.com/150" alt="Wash & Blow Dry" class="w-32 h-32 rounded-md object-cover mr-6" />
           <div>
             <h4 class="text-xl font-bold">Wash & Blow Dry</h4>
@@ -110,8 +114,8 @@
       </div>
     </section>
 
-    <footer class="bg-gray-100 dark:bg-gray-800 text-center py-4 mt-10 text-sm animate-fadeIn">
-      &copy; 2025 Uhuru
+    <footer class="bg-blue-100 dark:bg-gray-800 text-center py-4 mt-10 text-sm animate-fadeIn">
+      &copy; 2025 Uhuru-Lifestyle. All rights reserved.
     </footer>
   </body>
 </html>
