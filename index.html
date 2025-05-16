@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-500">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uhuru-Lifestyle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            animation: {
+              fadeIn: "fadeIn 1.5s ease-in-out",
+              slideUp: "slideUp 1s ease-in-out",
+              bounceIn: "bounceIn 1s ease"
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' }
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' }
+              },
+              bounceIn: {
+                '0%': { transform: 'scale(0.9)', opacity: '0' },
+                '50%': { transform: 'scale(1.05)', opacity: '1' },
+                '100%': { transform: 'scale(1)' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script>
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle('dark');
+      }
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
+    <header class="bg-blue-800 dark:bg-blue-900 text-white py-6 animate-fadeIn">
+      <div class="container mx-auto px-4 flex flex-col items-center">
+        <div class="flex items-center space-x-4">
+        <img src="https://via.placeholder.com/60" alt="Uhuru-Lifestyle Logo" class="rounded-full w-14 h-14">
+        <h1 class="text-3xl font-bold">Uhuru-Lifestyle</h1>
+    </div>
+        <nav class="space-x-4">
+          <a href="menu.html" class="hover:underline text-yellow-300">Menu</a>
+          <a href="https://wa.me/27672671157" target="_blank" class="hover:underline">WhatsApp</a>
+          <a href="https://facebook.com/yourpage" target="_blank" class="hover:underline">Facebook</a>
+          <a href="tel:+27672671157" class="hover:underline">Call</a>
+          <button onclick="toggleDarkMode()" class="ml-4 px-3 py-1 bg-yellow-400 text-black rounded hover:bg-yellow-300 transition">Toggle Dark Mode</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-10 text-center animate-slideUp">
+      <h2 class="text-2xl font-semibold mb-4">Your One-Stop Spot for Vibes & Services</h2>
+      <p class="text-lg">Relax and enjoy delicious shisanyama while we clean your ride and pamper you in our salon.</p>
+    </main>
+
+    <section class="container mx-auto px-4 py-10 animate-fadeIn">
+      <h2 class="text-3xl font-bold mb-6">Our Menu</h2>
+
+      <h3 class="text-2xl font-semibold mb-4 text-red-600">Shisanyama</h3>
+      <div class="space-y-6">
+        <div class="flex items-center border p-4 rounded-lg bg-white dark:bg-gray-800 transition-transform duration-500 hover:scale-105 animate-bounceIn">
+          <img src="https://via.placeholder.com/150" alt="Braai Plate" class="w-32 h-32 rounded-md object-cover mr-6" />
+          <div>
+            <h4 class="text-xl font-bold">Braai Plate</h4>
+            <p class="text-gray-600 dark:text-gray-300">Beef, wors, and pap</p>
+            <p class="text-green-600 font-semibold">R80</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-10 mb-4 text-blue-600">Carwash</h3>
+      <div class="space-y-6">
+        <div class="flex items-center border p-4 rounded-lg bg-white dark:bg-gray-800 transition-transform duration-500 hover:scale-105 animate-bounceIn">
+          <img src="https://via.placeholder.com/150" alt="Full Car Wash" class="w-32 h-32 rounded-md object-cover mr-6" />
+          <div>
+            <h4 class="text-xl font-bold">Full Car Wash</h4>
+            <p class="text-gray-600 dark:text-gray-300">Interior & exterior cleaning</p>
+            <p class="text-green-600 font-semibold">R100</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-10 mb-4 text-pink-600">Salon</h3>
+      <div class="space-y-6">
+        <div class="flex items-center border p-4 rounded-lg bg-white dark:bg-gray-800 transition-transform duration-500 hover:scale-105 animate-bounceIn">
+          <img src="https://via.placeholder.com/150" alt="Haircut" class="w-32 h-32 rounded-md object-cover mr-6" />
+          <div>
+            <h4 class="text-xl font-bold">Haircut</h4>
+            <p class="text-gray-600 dark:text-gray-300">Fade or classic cut</p>
+            <p class="text-green-600 font-semibold">R50</p>
+          </div>
+        </div>
+        <div class="flex items-center border p-4 rounded-lg bg-white dark:bg-gray-800 transition-transform duration-500 hover:scale-105 animate-bounceIn">
+          <img src="https://via.placeholder.com/150" alt="Wash & Blow Dry" class="w-32 h-32 rounded-md object-cover mr-6" />
+          <div>
+            <h4 class="text-xl font-bold">Wash & Blow Dry</h4>
+            <p class="text-gray-600 dark:text-gray-300">Gentle shampoo and styling</p>
+            <p class="text-green-600 font-semibold">R120</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-100 dark:bg-gray-800 text-center py-4 mt-10 text-sm animate-fadeIn">
+      &copy; 2025 Uhuru
+    </footer>
+  </body>
+</html>
